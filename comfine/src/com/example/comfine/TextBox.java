@@ -91,12 +91,12 @@ public class TextBox extends Activity implements OnClickListener { // all classe
 						Log.d("kps","intent is null");
 
 					}else{
-						Log.d("kps-intent",intent.getDataString());
+						Log.d("kps-intent"," " + intent.getDataString());
 						startActivity(intent);
 					}
 				} catch (Exception e) {
 
-					Log.d("exception-KPS",e.getMessage());
+					Log.d("exception-KPS",e.getLocalizedMessage());
 					startActivity(new Intent(Intent.ACTION_VIEW,
 							Uri.parse("https://www.facebook.com/1692920864")));
 
